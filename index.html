@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shepley's Family Butcher</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+</head>
+<body class="teal lighten-5">
+
+  <!-- top nav -->
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container">      
+      <span class="left grey-text text-darken-1">
+        <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+      </span>
+      <a class="right" href="/"><span>Shepley's </span>Family Butcher</a>
+    </div>
+  </nav>
+
+  <!-- side nav -->
+  <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">Shepley's</a></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+    <li><a href="pages/about.html" class="waves-effect">About</a></li>    
+  </ul>
+
+  <!-- products -->
+  <main class="products container grey-text text-darken-1">
+    <!-- <div class="card-panel product teal lighten-4 row">
+      <img src="img/meat-png-36759.png" alt="meat thumb">
+      <div class="product-details">
+        <div class="product-title">Greek kebab</div>
+        <div class="product-price">£1.99 each</div>
+      </div>      
+      <div class="product-options">        
+        <i class="material-icons call_out">call_outline</i>                       
+        <i class="material-icons">delete_outline</i>              
+      </div>
+    </div>     -->
+    <section class="grey-text text-darken-1 shepley-products">
+      <div class="product-image">
+        <img src="img/meat-png-36759.png" alt="meat thumb">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Beef Wellington</div>
+        <div class="product-price">£3.99 each</div>
+      </div>
+      <div class="product-options">        
+        <i class="material-icons">call</i>              
+        <i class="material-icons">delete_outline</i>              
+      </div>
+    </section>
+  </main>
+
+  <div class="center">
+    <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add product side nav -->
+  <section id="side-form" class="sidenav side-form">
+    <form class="add-product container section">
+      <h6 >New Product</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="product name" id="title" type="text" class="validate">
+        <label for="title">Product Name</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="price in pounds" id="price" type="text" class="validate">
+        <label for="price">Price</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add Product</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="js/common.js"></script>
+</body>
+</html>
